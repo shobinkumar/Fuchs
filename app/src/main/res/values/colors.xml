@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <?xml version="1.0" encoding="utf-8"?>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorDrawerBackground">#F4F4F4</color>
+    <color name="colorDrawerSelectedColor">#E2000E</color>
+    <color name="colorDrawerUnSelectedColor">#004E9D</color>
+    <color name="colorLine">#9B9B9B</color>
+    <color name="colorWhite">#ffffff</color>
+
+
     <color name="black">#000000</color>
     <color name="light_white">#F0F1F1</color>
     <color name="white">#ffffff</color>
     <color name="blue">#014E9D</color>
     <color name="red">#E2000E</color>
     <color name="light_grey">#697175</color>
+    <color name="grey">#414B4F</color>
 </resources>

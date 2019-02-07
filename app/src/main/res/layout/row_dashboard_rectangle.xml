@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/colorWhite"
+    android:weightSum="3">
+
+
+    <RelativeLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_blue"
+        android:layout_weight="1">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="108"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_24sdp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCount"
+                android:background="@drawable/rectangle_dashboard_amount"
+                android:padding="5dp"
+                android:text="$565129"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTotalAmount"
+                android:text="Orders to validate"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_red"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvCountPriorty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_24sdp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmountPriorty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCountPriorty"
+                android:background="@drawable/rectangle_dashboard_amount"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+
+                android:text="$15584"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvTextPriorty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTotalAmountPriorty"
+                android:text="Priorty Orders to validate"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_sky_blue"
+
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_sky_blue"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tvCountAside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_24sdp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmountAside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCountAside"
+                android:background="@drawable/rectangle_dashboard_amount"
+                android:padding="5dp"
+                android:text="$51526"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvTextAside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTotalAmountAside"
+                android:text="Orders set aside"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

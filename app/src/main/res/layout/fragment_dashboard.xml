@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/row_dashboard_rectangle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Open Orders- Waiting for validation"
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/ivChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:gravity="center"
+                android:background="@drawable/btn_background"
+                android:text="@string/txt_refresh"
+                android:textColor="@color/colorWhite"
+            />
+            <TextView
+                android:id="@+id/tvRefreshDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:text="last refreshed on 2/1/2019, 12:02:20 PM"
+                android:textColor="@color/colorTextLastRefresh"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

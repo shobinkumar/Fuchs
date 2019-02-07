@@ -12,4 +12,36 @@
     <string name="txt_attendence">Attendence</string>
     <string name="txt_analysis_report">Analysis Report</string>
     <string name="txt_logout">Logout</string>
+    <string name="txt_refresh">Refresh</string>
+    <string-array name="order_type">
+        <item>Standard Order</item>
+        <item>Standard Order</item>
+        <item>Standard Order</item>
+
+    </string-array>
+    <string-array name="product_type">array_product>
+
+        <item>Cars Engine Oil</item>
+        <item>Industrial Lubricants</item>
+        <item>Truck &amp; BusLubricants</item>
+
+    </string-array>
+
+
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="same_as_customer_address">Same As Customer Address</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="street_number">Street Number</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="country">Country</string>
+    <string name="sold_to_party">Sold To Party</string>
+    <string name="select_name">Select Name</string>
+    <string name="or">Or</string>
+    <string name="id">ID</string>
+    <string name="paypal">Paypal</string>
+    <string name="txt_ClaimDate">Claim Date</string>
+
 </resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <?xml version="1.0" encoding="utf-8"?>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
@@ -9,8 +8,10 @@
     <color name="colorDrawerUnSelectedColor">#004E9D</color>
     <color name="colorLine">#9B9B9B</color>
     <color name="colorWhite">#ffffff</color>
-
-
+    <color name="colorSkyBlue">#09B2EB</color>
+    <color name="colorDashboardAmount">#0782AB</color>
+    <color name="colorDashboardBackground">#f6f6f6</color>
+    <color name="colorTextLastRefresh">#636363</color>
     <color name="black">#000000</color>
     <color name="light_white">#F0F1F1</color>
     <color name="white">#ffffff</color>
@@ -18,4 +19,6 @@
     <color name="red">#E2000E</color>
     <color name="light_grey">#697175</color>
     <color name="grey">#414B4F</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00000000</color>
 </resources>

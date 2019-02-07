@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <TextView
+        android:id="@+id/txtSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sold_to_party"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14sdp" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_et_back"
+        android:hint="Enter ID"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/txtSold"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/etId"
+        android:background="@drawable/rectangle_blue"
+        android:layout_below="@+id/txtSold"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSold"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:text="@string/or"
+        android:layout_marginTop="7dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/blue"
+        />
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/txtOr"
+        android:id="@+id/spinnerOrderType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etId"
+        android:layout_alignBottom="@+id/etId"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/rectangle_grey_border"
+        >
+
+        <Spinner
+            android:id="@+id/source_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:entries="@array/order_type" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/icon_arrow_down" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDashboardBackground"
+        android:paddingLeft="15dp"
+        android:paddingTop="30dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_red">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivStartOfDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/icon_clock" />
+
+
+                    <TextView
+                        android:id="@+id/tvText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ivStartOfDay"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Start of the day"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_blue"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:id="@+id/ivMyAttendence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_attendance_calendar" />
+
+
+                    <TextView
+                        android:id="@+id/tvText1"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTotalAmount"
+                        android:layout_toRightOf="@+id/ivMyAttendence"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="My Attendence"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/includeEnter"
+            layout="@layout/row_start_day_enter_details"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_below="@id/llTop"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/includeShow"
+            layout="@layout/row_start_day_details"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_below="@id/llTop"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/includeAttendence"
+            layout="@layout/row_attendance"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_below="@id/llTop"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendarView"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/ivBlue"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/circle_blue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivBlue"
+            android:layout_alignBottom="@+id/ivBlue"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ivBlue"
+            android:gravity="center"
+            android:text="Regularised"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvRegularised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtRegular"
+            android:layout_alignBottom="@+id/txtRegular"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/txtRegular"
+            android:gravity="center"
+            android:text="19"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ivSky"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ivBlue"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:srcCompat="@drawable/circle_red"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivSky"
+            android:layout_alignBottom="@+id/ivSky"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ivSky"
+            android:gravity="center"
+            android:text="Leave"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvRegularised"
+            android:layout_alignTop="@+id/txtLeave"
+            android:layout_alignBottom="@+id/txtLeave"
+            android:layout_toRightOf="@+id/txtLeave"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ivBrown"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ivSky"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:srcCompat="@drawable/circle_blue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtRejection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivBrown"
+            android:layout_alignBottom="@+id/ivBrown"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/ivBrown"
+            android:gravity="center"
+            android:text="Rejection"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvRejection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvLeave"
+            android:layout_alignTop="@+id/txtRejection"
+            android:layout_alignBottom="@+id/txtRejection"
+            android:layout_toRightOf="@+id/txtRejection"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ivRed"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/tvRegularised"
+            app:srcCompat="@drawable/circle_blue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivRed"
+            android:layout_alignBottom="@+id/ivRed"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/ivRed"
+            android:gravity="center"
+            android:text="Absent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvHoliday"
+            android:layout_alignTop="@+id/txtAbsent"
+            android:layout_alignBottom="@+id/txtAbsent"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txtAbsent"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/ivYellow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ivRed"
+            android:layout_alignStart="@+id/ivRed"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_toRightOf="@+id/tvLeave"
+            app:srcCompat="@drawable/circle_red"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtPendingAprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivYellow"
+            android:layout_alignBottom="@+id/ivYellow"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/ivYellow"
+            android:gravity="center"
+            android:text="Pending Approval"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvPendingAprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtPendingAprove"
+            android:layout_alignBottom="@+id/txtPendingAprove"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/txtPendingAprove"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/ivGrey"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/ivYellow"
+            android:layout_alignStart="@+id/ivRed"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_toRightOf="@+id/tvRejection"
+            app:srcCompat="@drawable/circle_blue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtHoliday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivGrey"
+            android:layout_alignBottom="@+id/ivGrey"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_toRightOf="@+id/ivGrey"
+            android:gravity="center"
+            android:text="Holiday"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvHoliday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPendingAprove"
+            android:layout_alignTop="@+id/txtHoliday"
+            android:layout_alignBottom="@+id/txtHoliday"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txtHoliday"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+</RelativeLayout>

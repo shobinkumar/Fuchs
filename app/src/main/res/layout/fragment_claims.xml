@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDashboardBackground"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="30dp">
+
+
+                <TextView
+                    android:id="@+id/claim_nametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="Claim Name" />
+
+                <EditText
+                    android:id="@+id/claim_type_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/claim_nametxt"
+                    android:background="@drawable/rectangle_et_back"
+                    android:hint="Enter claim name"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/project_nametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/claim_type_text"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:text="Project Name" />
+
+
+                <RelativeLayout
+                    android:id="@+id/spinnerOrderType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/project_nametxt"
+                    android:background="@drawable/rectangle_grey_border">
+
+                    <Spinner
+                        android:id="@+id/source_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:entries="@array/order_type"
+                        android:padding="8dp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/icon_arrow_down" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/month_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerOrderType"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:text="@string/txt_ClaimDate" />
+
+                <RelativeLayout
+                    android:id="@+id/month_linear_lt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/month_txt"
+                    android:background="@drawable/rectangle_et_back"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/month_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="DD-MM-YYYY"
+                        android:padding="8dp"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/image_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/icon_attendance_calendar" />
+
+
+                </RelativeLayout>
+
+                <!--/////////////////////// Location layout ///////////////////-->
+                <LinearLayout
+                    android:id="@+id/date_linear_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/month_linear_lt"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/from_datelinear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/from_date_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From " />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <EditText
+                                android:id="@+id/from_date_edt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".8"
+                                android:background="@drawable/rectangle_et_back"
+                                android:hint="From"
+                                android:inputType="text"
+                                android:padding="8dp"
+                                android:paddingLeft="4dp"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/to_datelinear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/to_date_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To" />
+
+                        <LinearLayout
+                            android:id="@+id/to_date_lt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <EditText
+                                android:id="@+id/to_date_edt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".8"
+                                android:background="@drawable/rectangle_et_back"
+                                android:hint="To"
+                                android:inputType="text"
+
+                                android:padding="8dp"
+                                android:paddingLeft="4dp"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- //////////////////////////////////////////-->
+                <LinearLayout
+                    android:id="@+id/add_claim_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_linear_lyt"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--///////////////// Hotel /////////////////////////////-->
+                    <TextView
+                        android:id="@+id/hotel_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Hotel" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/hotel_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/hotel_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/hotel_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+                    <!--////////////////////////// Meal //////////////////////////-->
+
+                    <TextView
+                        android:id="@+id/data_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Meal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/meal_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+
+                            android:maxLength="5"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/meal_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+                            android:inputType="text"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/meal_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+                    <!--/////////////////////////// Fare1 ///////////////////////////////-->
+                    <TextView
+                        android:id="@+id/fuel_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Fare1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/fare1_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:padding="8dp"
+
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/fare1_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+                            android:inputType="text"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/fare1_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+                    <!--/////////////////////////////// Fare2 //////////////////-->
+
+
+                    <TextView
+                        android:id="@+id/fare2_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Fare2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/fare2_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+
+                            android:maxLength="5"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/fare2_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+                            android:inputType="text"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fare2_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+                    <!--///////////////////////Fare3///////////////////-->
+
+                    <TextView
+                        android:id="@+id/fare3_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Fare3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/fare3_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+
+                            android:maxLength="5"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/fare3_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+                            android:inputType="text"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fare3_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+
+                    <!--//////////////////Fare4/////////////-->
+                    <TextView
+                        android:id="@+id/fare4_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Fare4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/fare4_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:maxLength="5"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/fare4_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:hint="Remarks"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/fare4_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+
+                    </LinearLayout>
+                    <!--////////////////Other//////////-->
+                    <TextView
+                        android:id="@+id/other_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="4dp"
+
+                        android:text="Other" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/other_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+
+                            android:digits="0123456789"
+                            android:hint="Amount"
+                            android:inputType="number"
+
+                            android:maxLength="5"
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/other_remarks_edt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+                            android:background="@drawable/rectangle_et_back"
+                            android:hint="Remarks"
+                            android:inputType="text"
+
+                            android:padding="8dp"
+                            android:paddingLeft="4dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/other_file_attached"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".3"
+
+                            android:drawableRight="@drawable/attachment"
+                            android:padding="4dp"
+                            android:text="File Attached" />
+                    </LinearLayout>
+
+
+                    <!--//////////////////   -->
+                    <TextView
+                        android:id="@+id/total_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="4dp"
+                        android:text="Total Amount:"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_lt2"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_claim_lyt"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/rl1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/rectangle_blue"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rectangle_border_light_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

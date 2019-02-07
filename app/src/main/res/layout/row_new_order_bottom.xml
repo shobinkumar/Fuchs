@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue">
+
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:text="Total $1899" />
+    <ImageView
+        android:id="@+id/ivPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_cart"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvTotal"
+        android:layout_gravity="center"
+       />
+
+    <TextView
+        android:id="@+id/tvPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:text="Place Order" />
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:paddingEnd="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:text="Next"/>
+</RelativeLayout>

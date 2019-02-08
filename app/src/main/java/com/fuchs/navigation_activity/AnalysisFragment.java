@@ -16,7 +16,7 @@ public class AnalysisFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_analysis,null);
+        view=inflater.inflate(R.layout.fragment_analysis_report,null);
         TextView textview = (TextView)getActivity().findViewById(R.id.tvHeading);
         textview.setText("Analysis Report");
         return view ;

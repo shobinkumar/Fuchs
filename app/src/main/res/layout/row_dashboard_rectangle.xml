@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvCountPriorty"
-                android:background="@drawable/rectangle_dashboard_amount"
+                android:background="@drawable/rectangle_amount_red"
                 android:padding="5dp"
                 android:layout_marginTop="5dp"
 
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvCountAside"
-                android:background="@drawable/rectangle_dashboard_amount"
+                android:background="@drawable/rectangle_amount_sky_blue"
                 android:padding="5dp"
                 android:text="$51526"
                 android:layout_marginTop="5dp"

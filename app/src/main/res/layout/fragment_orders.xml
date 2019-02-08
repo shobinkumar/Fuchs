@@ -6,7 +6,7 @@
 
     <include
         android:id="@+id/tab_layout"
-        layout="@layout/tab_orders"
+        layout="@layout/tab_orders_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -23,7 +23,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
+        android:theme="@style/PrimaryActionButton"
         android:layout_margin="10dp"
-        android:src="@android:drawable/ic_input_add" />
+        android:src="@drawable/icon_floating" />
 
 </RelativeLayout>

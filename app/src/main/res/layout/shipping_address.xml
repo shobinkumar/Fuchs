@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
     android:background="@color/colorWhite"
-    android:padding="@dimen/_12sdp"
-    android:paddingBottom="10dp">
+    android:padding="15dp"
+   >
 
     <RelativeLayout
         android:id="@+id/rl"
@@ -18,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtSold"
+            android:id="@+id/txtShip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -31,7 +30,7 @@
             android:id="@+id/etId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtSold"
+            android:layout_below="@+id/txtShip"
             android:background="@drawable/rectangle_et_back"
             android:hint="Enter ID"
             android:inputType="textPersonName"
@@ -47,7 +46,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtSold"
+            android:layout_below="@+id/txtShip"
             android:layout_marginLeft="8dp"
             android:layout_toRightOf="@+id/etId"
             android:background="@drawable/rectangle_blue"
@@ -63,7 +62,7 @@
             android:id="@+id/txtOr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtSold"
+            android:layout_below="@+id/txtShip"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="7dp"
@@ -260,7 +259,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/rectangle_et_back"
         android:ems="10"
         android:inputType="textPersonName"
@@ -279,7 +277,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/rectangle_et_back"
         android:ems="10"
         android:inputType="textPersonName"

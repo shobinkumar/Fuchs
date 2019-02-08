@@ -18,7 +18,7 @@
             android:layout_height="@dimen/_50sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/kenni" />
 
         <TextView
             android:id="@+id/tvOrderDescription"

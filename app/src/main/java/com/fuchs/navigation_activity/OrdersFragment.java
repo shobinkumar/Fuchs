@@ -11,9 +11,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.fuchs.R;
+import com.fuchs.navigation_activity.activity.NewOrderActivity;
 import com.fuchs.navigation_activity.activity.NewOrderStepsActivity;
 import com.fuchs.navigation_activity.adapters.OrdersAdapter;
 import com.fuchs.navigation_activity.fragments.ApprovedFragment;
@@ -68,6 +70,12 @@ public class OrdersFragment extends Fragment {
     private void initViews() {
         TextView textview = (TextView)getActivity().findViewById(R.id.tvHeading);
         textview.setText("Orders");
+        ImageView ivCalendar=(ImageView)getActivity().findViewById(R.id.ivCalendar);
+        ImageView ivSearch=(ImageView)getActivity().findViewById(R.id.ivSearch);
+        ivCalendar.setVisibility(View.VISIBLE);
+        ivSearch.setVisibility(View.VISIBLE);
+
+
         layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
         addItems();
@@ -77,12 +85,12 @@ public class OrdersFragment extends Fragment {
     }
 
     private void addItems() {
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
-        al.add(new OrderItemModel("01-FEb-19", "CG Automation and Fix System", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
+        al.add(new OrderItemModel("01-FEb-19", "Power 4T 10W 30", "1"));
 
     }
 
@@ -106,7 +114,7 @@ public class OrdersFragment extends Fragment {
         }
         else if(view.getId()==R.id.fab)
         {
-            startActivity(new Intent(getActivity(),NewOrderStepsActivity.class));
+            startActivity(new Intent(getActivity(),NewOrderActivity.class));
         }
 
 

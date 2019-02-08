@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/white"
-                android:padding="30dp">
+                android:padding="15dp">
 
 
                 <TextView
@@ -105,10 +105,11 @@
 
                     <ImageView
                         android:id="@+id/image_date"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/icon_attendance_calendar" />
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_claim_calendar" />
 
 
                 </RelativeLayout>

@@ -34,7 +34,7 @@
 
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/txtName"
-        android:text=": Interplex Sunbelt inc."
+        android:text=": Party Name"
         android:textSize="@dimen/_13sdp" />
 
     <TextView
@@ -102,7 +102,7 @@
 
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/txtCity"
-        android:text=": Tomarac"
+        android:text=": City Name"
         android:textSize="@dimen/_13sdp" />
 
     <TextView

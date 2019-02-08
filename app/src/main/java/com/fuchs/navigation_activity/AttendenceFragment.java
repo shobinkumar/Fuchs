@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -46,7 +47,10 @@ public class AttendenceFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_attendence, null);
         TextView textview = (TextView) getActivity().findViewById(R.id.tvHeading);
         textview.setText("Attendence");
-
+        ImageView ivCalendar=(ImageView)getActivity().findViewById(R.id.ivCalendar);
+        ImageView ivSearch=(ImageView)getActivity().findViewById(R.id.ivSearch);
+        ivCalendar.setVisibility(View.GONE);
+        ivSearch.setVisibility(View.GONE);
         ButterKnife.bind(this, view);
         return view;
     }

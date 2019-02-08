@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.fuchs.R;
+import com.fuchs.navigation_activity.activity.OrderDetailActivity;
 import com.fuchs.navigation_activity.activity.OrderSummaryActivity;
 import com.fuchs.navigation_activity.model.OrderItemModel;
 
@@ -39,7 +40,7 @@ public class PendingApprovalAdapter extends RecyclerView.Adapter<PendingApproval
         myHolder.ivNavigate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                context.startActivity(new Intent(context,OrderSummaryActivity.class));
+                context.startActivity(new Intent(context,OrderDetailActivity.class));
             }
         });
 

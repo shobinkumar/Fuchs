@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/colorDrawerUnSelectedColor">
+    android:background="#0762be">
 
     <ImageView
         android:id="@+id/ivDrawer"
@@ -21,4 +21,22 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_16sdp"
         android:id="@+id/tvHeading"/>
+    <ImageView
+        android:id="@+id/ivCalendar"
+        android:layout_width="25dp"
+        android:layout_toLeftOf="@+id/ivSearch"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        android:layout_marginRight="20dp"
+
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_attendance_calendar"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:id="@+id/ivSearch"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_search"/>
 </RelativeLayout>

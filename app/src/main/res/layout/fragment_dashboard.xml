@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorDashboardBackground">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,43 +16,61 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="vertical">
-
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <TextView
+                android:id="@+id/txtOrderZone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Open Orders- Waiting for validation"
+                android:text="Order by Zone"
                 android:textColor="@color/colorDrawerUnSelectedColor"
                 android:textSize="@dimen/_16sdp" />
+            <ImageView
+                android:layout_toRightOf="@+id/txtOrderZone"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_drop_down"/>
+
+        </RelativeLayout>
+
+
 
             <ImageView
                 android:id="@+id/ivChart"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/order_by_zone"/>
 
             <TextView
                 android:id="@+id/tvRefresh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:paddingLeft="80dp"
-                android:paddingRight="80dp"
+                android:background="@drawable/rectangle_blue"
                 android:gravity="center"
-                android:background="@drawable/btn_background"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
                 android:text="@string/txt_refresh"
                 android:textColor="@color/colorWhite"
-            />
+                android:textSize="@dimen/_12sdp" />
+
             <TextView
                 android:id="@+id/tvRefreshDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textSize="@dimen/_10sdp"
                 android:gravity="center"
-                android:textStyle="italic"
                 android:text="last refreshed on 2/1/2019, 12:02:20 PM"
                 android:textColor="@color/colorTextLastRefresh"
-                />
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="italic" />
         </LinearLayout>
     </LinearLayout>
 

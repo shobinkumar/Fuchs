@@ -1,7 +1,6 @@
 package com.fuchs.navigation_activity.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,37 +15,24 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class NewOrderActivity extends Activity {
-//    @BindView(R.id.recyclerView)
-//    RecyclerView recyclerView;
-//    GridLayoutManager gridLayoutManager;
-
-    TextView txtSold;
-    TextView txtShip;
+public class ProductListActivity extends Activity {
+    @BindView(R.id.recyclerView)
+    RecyclerView recyclerView;
+    GridLayoutManager gridLayoutManager;
 
 
-    @BindView(R.id.tvNext)
-    TextView tvNext;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_order);
+        setContentView(R.layout.activity_products_list);
         ButterKnife.bind(this);
-        txtSold=(TextView)findViewById(R.id.txtSold);
-        txtShip=(TextView)findViewById(R.id.txtShip);
-        txtSold.setText("Sold to Party");
-        txtShip.setText("Ship to Party");
-
-
-
-
-        ImageView imageView=(ImageView)findViewById(R.id.ivDrawer);
-
-        TextView tv=(TextView)findViewById(R.id.tvHeading);
+        ImageView imageView = (ImageView) findViewById(R.id.ivDrawer);
+        TextView tv = (TextView) findViewById(R.id.tvHeading);
         ImageView imageViewSearch=(ImageView)findViewById(R.id.ivSearch);
         imageViewSearch.setVisibility(View.GONE);
         tv.setText("New Order");
-        imageViewSearch.setVisibility(View.GONE);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,14 +44,11 @@ public class NewOrderActivity extends Activity {
     }
 
     private void initViews() {
-//    gridLayoutManager=new GridLayoutManager(this,2);
-//    recyclerView.setLayoutManager(gridLayoutManager);
-//    recyclerView.setAdapter(new NewOrderAdapter(this));
+    gridLayoutManager=new GridLayoutManager(this,2);
+    recyclerView.setLayoutManager(gridLayoutManager);
+    recyclerView.setAdapter(new NewOrderAdapter(this));
 
     }
-    @OnClick(R.id.tvNext)
-    public void onClick(View view)
-    {
-startActivity(new Intent(this,ProductListActivity.class));
-    }
+
+
 }

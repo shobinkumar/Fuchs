@@ -21,8 +21,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
             <include
+                android:id="@+id/add1"
+                layout="@layout/layout_address_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+            <include
+                android:id="@+id/add2"
                 layout="@layout/layout_address_format"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -198,7 +204,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/pic" />
+                            android:src="@drawable/kenni" />
 
                     </LinearLayout>
 

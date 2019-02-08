@@ -1,5 +1,6 @@
 package com.fuchs;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -74,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tvAnalysis)
     TextView tvAnalysis;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.llDashboardMain, R.id.llOrderMain, R.id.llClaimsMain, R.id.llAttendenceMain, R.id.llAnalysisReportMain,R.id.ivDrawer})
+    @OnClick({R.id.llDashboardMain, R.id.llOrderMain, R.id.llClaimsMain, R.id.llAttendenceMain, R.id.llAnalysisReportMain,R.id.ivDrawer,R.id.tvLogout})
     public void pickDoor(View view) {
         if (view.getId() == R.id.llDashboardMain) {
             changeFragment(new DashboardFragment());
@@ -117,7 +121,13 @@ public class MainActivity extends AppCompatActivity {
         else if (view.getId() == R.id.ivDrawer) {
           drawerLayout.openDrawer(Gravity.START);
         }
+        else if (view.getId() == R.id.tvLogout) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // To clean up all activities
+            startActivity(intent);
+            finish();
 
+        }
 
     }
 

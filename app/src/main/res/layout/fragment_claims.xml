@@ -234,7 +234,7 @@
                             android:maxLength="5"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/hotel_remarks_edt"
@@ -248,7 +248,7 @@
                             android:inputType="text"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/hotel_file_attached"
@@ -291,7 +291,7 @@
                             android:maxLength="5"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/meal_remarks_edt"
@@ -305,7 +305,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/meal_file_attached"
@@ -349,7 +349,7 @@
                             android:padding="6dp"
 
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/fare1_remarks_edt"
@@ -363,7 +363,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16dp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/fare1_file_attached"
@@ -408,7 +408,7 @@
                             android:maxLength="5"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/fare2_remarks_edt"
@@ -423,7 +423,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/fare2_file_attached"
@@ -468,7 +468,7 @@
                             android:maxLength="5"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/fare3_remarks_edt"
@@ -483,7 +483,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/fare3_file_attached"
@@ -528,7 +528,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/fare4_remarks_edt"
@@ -543,7 +543,7 @@
                             android:inputType="text"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/fare4_file_attached"
@@ -587,7 +587,7 @@
                             android:maxLength="5"
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <EditText
                             android:id="@+id/other_remarks_edt"
@@ -602,7 +602,7 @@
 
                             android:padding="6dp"
                             android:paddingLeft="4dp"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/other_file_attached"

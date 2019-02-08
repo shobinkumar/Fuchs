@@ -56,7 +56,7 @@ public class NewOrderAdapter extends RecyclerView.Adapter<NewOrderAdapter.MyHold
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 5;
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {

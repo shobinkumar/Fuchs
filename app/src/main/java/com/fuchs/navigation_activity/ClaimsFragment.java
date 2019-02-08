@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -76,4 +77,27 @@ public class ClaimsFragment extends Fragment {
         datePickerDialog.show();
 
     }
+
+    @OnClick({R.id.tvSubmit,R.id.tvCancel})
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.tvCancel:
+                method();
+                break;
+            case R.id.tvSubmit:
+                method();
+                break;
+
+        }
+
+
+
+    }
+
+    void method(){
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.frameLayout, new DashboardFragment());
+        ft.commit();
+    }
+
 }

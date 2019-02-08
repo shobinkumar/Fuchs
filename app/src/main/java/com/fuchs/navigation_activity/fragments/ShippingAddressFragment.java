@@ -42,7 +42,7 @@ public class ShippingAddressFragment extends Fragment {
             public void onClick(View view) {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.frame_container, new PaymentFragment());
+                ft.replace(R.id.frame_container, new AddToCartFragment());
                 ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                 ft.commit();
             }

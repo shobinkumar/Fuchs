@@ -4,18 +4,26 @@
     android:layout_height="match_parent"
     android:background="@color/colorDashboardBackground">
 
+    <include
+        android:id="@+id/tab_layout"
+        layout="@layout/tab_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout" />
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
         android:layout_margin="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:src="@android:drawable/ic_input_add" />
 
 </RelativeLayout>

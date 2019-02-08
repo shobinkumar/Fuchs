@@ -1,221 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorDrawerBackground"
-
+android:scrollbars="none"
     android:orientation="vertical"
     android:padding="10dp">
 
     <LinearLayout
-
-    android:id="@+id/llDashboardMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/llDashboard"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/circle_blue">
 
-            <ImageView
-                android:layout_width="match_parent"
+            android:id="@+id/llDashboardMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llDashboard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_blue">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_dashboard" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDashboard"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/nav_dashboard" />
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_dashboard"
+
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvDashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="@string/txt_dashboard"
-
-            android:textColor="@color/colorDrawerUnSelectedColor"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorLine" />
-
-    <LinearLayout
-        android:id="@+id/llOrderMain"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine" />
 
         <LinearLayout
-            android:id="@+id/llOrder"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/circle_blue">
+            android:id="@+id/llOrderMain"
 
-            <ImageView
-                android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/llOrder"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_blue">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_orders" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/nav_orders" />
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_orders"
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvOrder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="@string/txt_orders"
-            android:textColor="@color/colorDrawerUnSelectedColor"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorLine" />
-
-    <LinearLayout
-        android:id="@+id/llClaimsMain"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-
-        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine" />
 
         <LinearLayout
-            android:id="@+id/llClaims"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/circle_blue">
+            android:id="@+id/llClaimsMain"
 
-            <ImageView
-                android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/llClaims"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_blue">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_claims" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvClaims"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/nav_claims" />
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_claims"
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvClaims"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="@string/txt_claims"
-            android:textColor="@color/colorDrawerUnSelectedColor"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorLine" />
-
-    <LinearLayout
-
-        android:id="@+id/llAttendenceMain"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-
-        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine" />
 
         <LinearLayout
-            android:id="@+id/llAttendence"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/circle_blue">
 
-            <ImageView
-                android:layout_width="match_parent"
+            android:id="@+id/llAttendenceMain"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/llAttendence"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_blue">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_attendance" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAttendence"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/nav_attendance" />
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_attendence"
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvAttendence"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="@string/txt_attendence"
-            android:textColor="@color/colorDrawerUnSelectedColor"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorLine" />
-
-    <LinearLayout
-        android:id="@+id/llAnalysisReportMain"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-
-        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine" />
 
         <LinearLayout
-            android:id="@+id/llAnalysisReport"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:background="@drawable/circle_blue">
+            android:id="@+id/llAnalysisReportMain"
 
-            <ImageView
-                android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/llAnalysisReport"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_blue">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nav_analysis" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAnalysis"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/nav_analysis" />
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_analysis_report"
+                android:textColor="@color/colorDrawerUnSelectedColor"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLine" />
+
         <TextView
-            android:id="@+id/tvAnalysis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="@string/txt_analysis_report"
-            android:textColor="@color/colorDrawerUnSelectedColor"
-            android:textSize="16sp" />
-
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_blue"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="6dp"
+            android:text="@string/txt_logout"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorLine" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_blue"
-        android:textSize="14sp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
-        android:layout_gravity="end"
-        android:textColor="@color/colorWhite"
-        android:text="@string/txt_logout"/>
-</LinearLayout>
+</ScrollView>

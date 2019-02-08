@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOr"
+        android:layout_marginTop="20dp"
+        android:text="@string/address"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddress"
+        android:layout_alignLeft="@+id/tvPostal"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtName"
+        android:text=": Interplex Sunbelt inc."
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/txtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="10dp"
+
+        android:text="Street"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvPostal"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtStreet"
+        android:text=": Street no 10"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/txtPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStreet"
+        android:layout_marginTop="10dp"
+
+        android:text="Postal Code     "
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStreet"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtPostal"
+        android:text=": 78945"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPostal"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/city"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPostal"
+        android:layout_alignLeft="@+id/tvPostal"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtCity"
+        android:text=": Tomarac"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/txtRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/region"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCity"
+        android:layout_alignLeft="@+id/tvPostal"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txtRegion"
+        android:text=": Fl"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegion"
+        android:layout_marginTop="10dp"
+
+        android:text="Country"
+        android:textSize="@dimen/_13sdp" />
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRegion"
+        android:layout_alignLeft="@+id/tvPostal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+
+        android:layout_toRightOf="@+id/txtCountry"
+        android:text=": US"
+        android:textSize="@dimen/_13sdp" />
+</RelativeLayout>

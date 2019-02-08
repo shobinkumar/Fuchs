@@ -21,6 +21,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".navigation_activity.activity.NewOrderActivity" />
         <activity android:name=".navigation_activity.activity.NewOrderStepsActivity"/>
+        <activity android:name=".navigation_activity.activity.OrderSummaryActivity"/>
+        <activity android:name=".navigation_activity.activity.OrderDetailActivity"/>
 
     </application>
 

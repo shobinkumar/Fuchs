@@ -10,6 +10,7 @@ import android.view.View;
 import com.fuchs.R;
 import com.fuchs.navigation_activity.fragments.AddToCartFragment;
 import com.fuchs.navigation_activity.fragments.PaymentFragment;
+import com.fuchs.navigation_activity.fragments.ShippedFragment;
 import com.fuchs.navigation_activity.fragments.ShippingAddressFragment;
 
 import butterknife.BindView;
@@ -23,11 +24,11 @@ public class NewOrderStepsActivity extends AppCompatActivity {
     @BindView(R.id.view2)
     View view2;
 
-    @BindView(R.id.view3)
-    View view3;
+//    @BindView(R.id.view3)
+//    View view3;
 
     Fragment addToCart;
-    Fragment payment;
+   // Fragment payment;
     Fragment address;
 
     @Override
@@ -41,7 +42,7 @@ public class NewOrderStepsActivity extends AppCompatActivity {
     }
 
     private void listeners() {
-        replaceFragment(new AddToCartFragment());
+        replaceFragment(new ShippingAddressFragment());
         changeColor(getResources().getColor(R.color.colorDrawerSelectedColor), getResources().getColor(R.color.colorDrawerUnSelectedColor), getResources().getColor(R.color.colorDrawerUnSelectedColor));
 
 
@@ -51,7 +52,7 @@ public class NewOrderStepsActivity extends AppCompatActivity {
 
         view1.setBackgroundColor(color1);
        view2.setBackgroundColor(color2);
-        view3.setBackgroundColor(color3);
+      //  view3.setBackgroundColor(color3);
 
     }
 
@@ -59,7 +60,7 @@ public class NewOrderStepsActivity extends AppCompatActivity {
     private void initViews() {
         addToCart = new AddToCartFragment();
         address = new ShippingAddressFragment();
-        payment = new PaymentFragment();
+       // payment = new PaymentFragment();
 
     }
 

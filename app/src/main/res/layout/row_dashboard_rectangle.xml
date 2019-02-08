@@ -9,7 +9,7 @@
 
 
     <RelativeLayout
-
+        android:id="@+id/rl1"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:background="@drawable/rectangle_blue"
@@ -17,7 +17,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/rl1"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmount"
-                android:text="Orders to validate"
+                android:text="Pending Approval Orders"
                 android:layout_marginTop="5dp"
 
                 android:textColor="@color/colorWhite"
@@ -97,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmountPriorty"
-                android:text="Priorty Orders to validate"
+                android:text="Approved Orders"
                 android:layout_marginTop="5dp"
 
                 android:textColor="@color/colorWhite"
@@ -147,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmountAside"
-                android:text="Orders set aside"
+                android:text="Shipped Orders"
                 android:layout_marginTop="5dp"
 
                 android:textColor="@color/colorWhite"

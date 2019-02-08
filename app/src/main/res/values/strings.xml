@@ -15,8 +15,8 @@
     <string name="txt_refresh">Refresh</string>
     <string-array name="order_type">
         <item>Standard Order</item>
-        <item>Standard Order</item>
-        <item>Standard Order</item>
+        <item>Free-of-charge Order</item>
+        <item>Consignment Order</item>
 
     </string-array>
     <string-array name="product_type">array_product>
@@ -26,7 +26,13 @@
         <item>Truck &amp; BusLubricants</item>
 
     </string-array>
+    <string-array name="array_sold">array_product>
 
+        <item>Allison Transmission</item>
+        <item>Indianapolis Power &amp; Light</item>
+        <item>Zimmer Holdings</item>
+
+    </string-array>
 
     <string name="name">Name</string>
     <string name="address">Address</string>

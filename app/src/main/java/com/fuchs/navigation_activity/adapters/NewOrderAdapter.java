@@ -35,20 +35,21 @@ public class NewOrderAdapter extends RecyclerView.Adapter<NewOrderAdapter.MyHold
     @Override
     public void onBindViewHolder(@NonNull NewOrderAdapter.MyHolder myHolder, int pos) {
         myHolder.iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        if(pos/2==0)
-        {
+        if (pos == 0) {
             myHolder.iv.setImageDrawable(activity.getResources().getDrawable(R.drawable.engine_oil));
-        }
-        else
-        {
+        } else if (pos == 1) {
             myHolder.iv.setImageDrawable(activity.getResources().getDrawable(R.drawable.automatic_transmission));
+        } else if (pos == 2) {
+            myHolder.iv.setImageDrawable(activity.getResources().getDrawable(R.drawable.coolent));
+        } else if (pos == 3) {
+            myHolder.iv.setImageDrawable(activity.getResources().getDrawable(R.drawable.grease));
+        } else if (pos == 4) {
+            myHolder.iv.setImageDrawable(activity.getResources().getDrawable(R.drawable.manualtransmission));
         }
-
-
         myHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                activity.startActivity(new Intent(activity,AddToCartActivity.class));
+                activity.startActivity(new Intent(activity, AddToCartActivity.class));
             }
         });
     }

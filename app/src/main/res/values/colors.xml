@@ -21,4 +21,18 @@
     <color name="grey">#414B4F</color>
     <color name="colorBlack">#000000</color>
     <color name="colorTransparent">#00000000</color>
+    <color name="colorDashboardBlueSmall">#023B76</color>
+   <color name="colorDashboardRedSmall">#A9000B</color>
+    <color name="colorDashboardSkyBlueSmall">#0782AB</color>
+
+    <color name="colorDashboardYellow">#FFBA00</color>
+    <color name="colorDashboardYellowSmall">#D89E00</color>
+
+    <color name="colorDashboardCGreen">#2CC4ca</color>
+    <color name="colorDashboardCGreenSmall">#18acb2</color>
+
+    <color name="colorDashboardGreen">#66be54</color>
+    <color name="colorDashboardGreenSmall">#51a240</color>
+
+
 </resources>

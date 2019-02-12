@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/rectangle_light_background"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvOrderZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorDrawerUnSelectedColor"
+        android:text="Order by zone" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvOrderZone"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tvSoldParty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:textColor="@color/colorDrawerUnSelectedColor"
+
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/_12sdp"
+
+        android:text="Sold to Party" />
+</RelativeLayout>

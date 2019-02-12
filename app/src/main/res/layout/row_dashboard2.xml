@@ -11,9 +11,9 @@
     <RelativeLayout
         android:id="@+id/rl1"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@drawable/rectangle_blue">
+        android:background="@drawable/rectangle_yellow">
 
 
         <RelativeLayout
@@ -27,7 +27,7 @@
                 android:id="@+id/tvCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="108"
+                android:text="212"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_24sdp" />
 
@@ -37,9 +37,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvCount"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/rectangle_dashboard_amount"
+                android:background="@drawable/rectangle_yellow_small"
                 android:padding="5dp"
-                android:text="$565"
+                android:text="$565129"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_12sdp" />
 
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmount"
                 android:layout_marginTop="5dp"
-                android:text="Mobile Blocked"
+                android:text="Awaiting Delivery"
 
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_14sdp" />
@@ -59,9 +59,9 @@
     <RelativeLayout
         android:id="@+id/rl21"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="5dp"
-        android:background="@drawable/rectangle_red"
+        android:background="@drawable/rectangle_cgreen"
 
         android:layout_weight="1">
 
@@ -75,7 +75,7 @@
                 android:id="@+id/tvCountPriorty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="18"
+                android:text="9"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_24sdp" />
 
@@ -85,10 +85,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvCountPriorty"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/rectangle_amount_red"
+                android:background="@drawable/rectangle_cgreen_small"
                 android:padding="5dp"
 
-                android:text="$155"
+                android:text="$15584"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_12sdp" />
 
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmountPriorty"
                 android:layout_marginTop="5dp"
-                android:text="Credit Blocked"
+                android:text="Billed"
 
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_14sdp" />
@@ -117,15 +117,15 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangle_sky_blue"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_green"
             android:padding="15dp">
 
             <TextView
                 android:id="@+id/tvCountAside"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15"
+                android:text="1125"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_24sdp" />
 
@@ -135,9 +135,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvCountAside"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/rectangle_amount_sky_blue"
+                android:background="@drawable/rectangle_green_small"
                 android:padding="5dp"
-                android:text="$6515"
+                android:text="$51526"
 
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_12sdp" />
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvTotalAmountAside"
                 android:layout_marginTop="5dp"
-                android:text="Shipped"
+                android:text="Paid"
 
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_14sdp" />

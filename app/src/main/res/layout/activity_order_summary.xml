@@ -8,13 +8,48 @@
     <include
         android:id="@+id/activtyToolbar"
         layout="@layout/activity_toolbar" />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activtyToolbar"
+        android:orientation="vertical">
 
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_et_back"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_toRightOf="@+id/ivSearchs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+        <ImageView
+            android:id="@+id/ivSearchs"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_search"
+            android:tint="@color/black"/>
+        <ImageView
+            android:id="@+id/ivCross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+    </RelativeLayout>
+    </LinearLayout>
     <include
         android:id="@+id/tabLayout"
         layout="@layout/tab_orders"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/activtyToolbar" />
+        android:layout_below="@+id/ll" />
 
 
     <FrameLayout

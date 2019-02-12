@@ -23,10 +23,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Order No."
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvOrderNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1254876"
@@ -38,10 +39,12 @@
             android:layout_height="wrap_content"
             android:text="Order Date"
             android:layout_marginTop="15dp"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvOrderDate"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2 Feb, 2019"
@@ -53,10 +56,12 @@
             android:layout_height="wrap_content"
             android:text="Request Date"
             android:layout_marginTop="15dp"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvRequestDate"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="10 Feb, 2019"
@@ -73,10 +78,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sold To Party"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvSoldParty"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Party Name(65218)"
@@ -88,10 +95,12 @@
             android:layout_height="wrap_content"
             android:text="Ship To Party"
             android:layout_marginTop="15dp"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvShipParty"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Party Name(65218)"
@@ -103,10 +112,12 @@
             android:layout_height="wrap_content"
             android:text="Value"
             android:layout_marginTop="15dp"
-            android:textSize="@dimen/_14sdp"
+            android:textSize="@dimen/_13sdp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/tvValue"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$1200.00"

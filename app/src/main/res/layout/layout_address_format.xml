@@ -34,7 +34,7 @@
 
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/txtName"
-        android:text=": Party Name"
+        android:text=": Party Name(12345)"
         android:textSize="@dimen/_13sdp" />
 
     <TextView
@@ -57,7 +57,7 @@
 
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/txtStreet"
-        android:text=": Street no 10"
+        android:text=": Street no 12"
         android:textSize="@dimen/_13sdp" />
 
     <TextView

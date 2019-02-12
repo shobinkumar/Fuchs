@@ -3,12 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorDashboardBackground">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/row_dashboard_rectangle" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@color/colorWhite">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dashboardRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/llDots"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/dashboardRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"/>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,27 +38,30 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/txtOrderZone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Order by Zone"
-                android:textColor="@color/colorDrawerUnSelectedColor"
-                android:textSize="@dimen/_16sdp" />
-            <ImageView
-                android:layout_toRightOf="@+id/txtOrderZone"
-                android:layout_width="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_centerVertical="true"
-                android:layout_height="wrap_content"
-                android:src="@drawable/icon_drop_down"/>
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlOrderZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/txtOrderZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Order by Zone"
+                    android:textColor="@color/colorDrawerUnSelectedColor"
+                    android:textSize="@dimen/_16sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txtOrderZone"
+                    android:src="@drawable/icon_drop_down" />
+
+            </RelativeLayout>
 
 
             <ImageView
@@ -44,8 +69,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/order_by_zone"/>
-
+                android:visibility="visible"
+                android:src="@drawable/order_by_zone" />
+            <ImageView
+                android:id="@+id/ivSold"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/party" />
             <TextView
                 android:id="@+id/tvRefresh"
                 android:layout_width="wrap_content"

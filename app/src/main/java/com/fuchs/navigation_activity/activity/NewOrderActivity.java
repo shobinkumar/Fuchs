@@ -4,15 +4,15 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.fuchs.R;
-import com.fuchs.navigation_activity.adapters.NewOrderAdapter;
 
 import java.util.Calendar;
 
@@ -40,10 +40,27 @@ public class NewOrderActivity extends Activity {
     @BindView(R.id.tvRequestDate)
     TextView tvRequestDate;
 
+    @BindView(R.id.cbSameAddress)
+    CheckBox cbSameAddress;
+
+    @BindView(R.id.etCustomerName)
+    EditText etCustomerName;
+
+    @BindView(R.id.etStreetNo)
+    EditText etStreetNo;
+    @BindView(R.id.etPostalCode)
+    EditText etPostalCode;
+    @BindView(R.id.etCity)
+    EditText etCity;
+    @BindView(R.id.etRegion)
+    EditText etRegion;
+    @BindView(R.id.etCountry)
+    EditText etCountry;
     Calendar dateSelected = Calendar.getInstance();
     private DatePickerDialog datePickerDialog;
 
     int from;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +87,29 @@ public class NewOrderActivity extends Activity {
         });
         initViews();
         ButterKnife.bind(this);
+
+
+        cbSameAddress.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    etCustomerName.setText("Interplex Sunbelt inc.");
+                    etStreetNo.setText("Street no 10");
+                    etPostalCode.setText("78945");
+                    etCity.setText("Tomarac");
+                    etRegion.setText("Fl");
+                    etCountry.setText("US");
+                } else {
+                    etCustomerName.setText("");
+                    etStreetNo.setText("");
+                    etPostalCode.setText("");
+                    etCity.setText("");
+                    etRegion.setText("");
+                    etCountry.setText("");
+                }
+            }
+        });
+
     }
 
     private void initViews() {
@@ -88,12 +128,12 @@ public class NewOrderActivity extends Activity {
     public void onImageClick(View view) {
         switch (view.getId()) {
             case R.id.ivCalendar:
-                from =0;
+                from = 0;
                 setDateTimeField();
                 break;
 
             case R.id.ivCalendar2:
-                from =1;
+                from = 1;
 
                 setDateTimeField();
                 break;
@@ -115,10 +155,10 @@ public class NewOrderActivity extends Activity {
                     @Override
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
-                        if (from==1)
-                        tvRequestDate.setText(dayOfMonth + "-" + monthOfYear+"-"+year);
+                        if (from == 1)
+                            tvRequestDate.setText(dayOfMonth + "-" + monthOfYear + "-" + year);
                         else
-                        tvOrderDate.setText(dayOfMonth + "-" + monthOfYear+"-"+year);
+                            tvOrderDate.setText(dayOfMonth + "-" + monthOfYear + "-" + year);
                     }
                 }, mYear, mMonth, mDay);
         datePickerDialog.show();

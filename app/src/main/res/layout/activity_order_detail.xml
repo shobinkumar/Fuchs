@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:text="Po Number"
+                        android:text="PO Number"
                         android:textColor="@color/blue"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />
@@ -84,7 +84,7 @@
                         android:layout_height="match_parent"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:text="SAP ID"
+                        android:text="SAP ORDER"
                         android:textColor="@color/blue"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold" />

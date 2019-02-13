@@ -70,7 +70,7 @@
             android:drawablePadding="@dimen/_12sdp"
             android:ems="10"
             android:hint="@string/username"
-            android:text="kuldeep.singh@gmail.com  "
+            android:text="RichardParr@gmail.com  "
             android:inputType="textPersonName"
             android:padding="@dimen/_10sdp"
             android:textColor="@color/black"

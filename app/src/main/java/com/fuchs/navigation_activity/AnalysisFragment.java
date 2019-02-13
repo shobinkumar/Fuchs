@@ -27,7 +27,7 @@ public class AnalysisFragment extends Fragment {
         view=inflater.inflate(R.layout.fragment_analysis_report,null);
         ButterKnife.bind(this,view);
         TextView textview = (TextView)getActivity().findViewById(R.id.tvHeading);
-        textview.setText("Analysis Report");
+        textview.setText("Analytic Report");
         return view ;
     }
     @OnClick(R.id.tvRefresh)

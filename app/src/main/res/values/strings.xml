@@ -10,7 +10,7 @@
     <string name="txt_dashboard">Dashboard</string>
     <string name="txt_claims">Claims</string>
     <string name="txt_attendence">Attendence</string>
-    <string name="txt_analysis_report">Analysis Report</string>
+    <string name="txt_analysis_report">Analysis Reports</string>
     <string name="txt_logout">Logout</string>
     <string name="txt_refresh">Refresh</string>
     <string-array name="order_type">
